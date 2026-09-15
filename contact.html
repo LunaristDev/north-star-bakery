@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="images/bakery-logo.png" alt="North Star Bakery logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Contact & Pre-Order</h1>
+    <p>Have a question or want to place a pre-order? Fill out the form below and we'll get back to you.</p>
+
+    <section id="inquiry-form">
+      <h2>Inquiry / Pre-Order Form</h2>
+
+      <p id="form-success" class="success-message" hidden>Thanks! Your request has been received — we'll be in touch soon.</p>
+
+      <form action="#" method="post" novalidate>
+
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+          <span class="error-message" id="name-error"></span>
+        </p>
+
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="error-message" id="email-error"></span>
+        </p>
+
+        <p>
+          <label for="pickup-date">Pickup Date</label><br>
+          <input type="date" id="pickup-date" name="pickup-date">
+        </p>
+
+        <fieldset>
+          <legend>What are you contacting us about?</legend>
+          <p>
+            <input type="radio" id="request-preorder" name="request-type" value="preorder">
+            <label for="request-preorder">Pre-order</label>
+          </p>
+          <p>
+            <input type="radio" id="request-question" name="request-type" value="question">
+            <label for="request-question">General question</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="item-details">Item Details</label><br>
+          <textarea id="item-details" name="item-details" rows="4" placeholder="What would you like to order, and how many?"></textarea>
+        </p>
+
+        <p>
+          <label for="allergy-notes">Allergy Notes (if applicable)</label><br>
+          <textarea id="allergy-notes" name="allergy-notes" rows="3"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Request</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <p>214 Maple Street<br>
+      Our storefront is on the corner of Maple and 3rd, with street parking available out front.</p>
+    </section>
+
+    <section id="hours">
+      <h2>Hours of Operation</h2>
+      <table>
+        <caption>North Star Bakery Weekly Hours</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday - Friday</th>
+            <td>7:00 AM - 3:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Saturday</th>
+            <td>7:00 AM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Sunday</th>
+            <td>8:00 AM - 2:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>North Star Bakery &middot; 214 Maple Street &middot; Tuesday-Sunday, 7:00 AM - 3:00 PM</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
